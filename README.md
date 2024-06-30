@@ -1,36 +1,75 @@
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculation</title>
     <style>
-      label,
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        margin: 0;
+      }
+      #container {
+        text-align: center;
+        width: 300px;
+      }
+      label {
+        display: block;
+        margin: 10px 0;
+      }
       input,
       button,
       textarea {
         display: block;
+        width: 100%;
         margin: 10px 0;
+        border-radius: 8px;
+        border: 1px solid gray;
+        box-sizing: border-box;
+      }
+      input::placeholder {
+        color: gray;
+        font-size: 16px;
+      }
+      input {
+        height: 40px; /* Adjust this value to change the height */
+      }
+      button {
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border: none;
+      }
+      textarea {
+        resize: none;
       }
     </style>
   </head>
   <body>
-    <label for="degreeInput">導線絕緣溫度:</label>
-    <input
-      type="text"
-      id="degreeInput"
-      placeholder="請輸入導線絕緣溫度 (60, 75, 90)"
-    />
+    <div id="container">
+      <label for="degreeInput">導線絕緣溫度:</label>
+      <input
+        type="text"
+        id="degreeInput"
+        placeholder="請輸入導線絕緣溫度 (60, 75, 90)"
+      />
 
-    <label for="wiresInput">導線數:</label>
-    <input type="text" id="wiresInput" placeholder="請輸入導線數為多少" />
+      <label for="wiresInput">導線數:</label>
+      <input type="text" id="wiresInput" placeholder="請輸入導線數為多少" />
 
-    <label for="amphereInput">安培容量:</label>
-    <input type="text" id="amphereInput" placeholder="請輸入安培容量" />
+      <label for="amphereInput">安培容量:</label>
+      <input type="text" id="amphereInput" placeholder="請輸入安培容量" />
 
-    <button id="calculateBtn">Calculate</button>
+      <button id="calculateBtn">Calculate</button>
 
-    <textarea id="result" rows="5" readonly></textarea>
+      <textarea id="result" rows="5" readonly></textarea>
+    </div>
 
     <script>
       document
