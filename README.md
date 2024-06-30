@@ -46,7 +46,7 @@
           const resultText = document.getElementById("result");
 
           function showResult(degree, squareMeters) {
-            resultText.value = `導線絕緣溫度 ${degree}℃\n絞線面積為: ${squareMeters}mm`;
+            resultText.value = `導線絕緣溫度 ${degree}℃\n絞線面積為: ${squareMeters}mm²`;
           }
 
           if (!degree || isNaN(numberOfWires) || isNaN(amphereCapacity)) {
