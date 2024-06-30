@@ -15,18 +15,18 @@
     </style>
   </head>
   <body>
-    <label for="degreeInput">Degree:</label>
+    <label for="degreeInput">導線絕緣度數:</label>
     <input
       type="text"
       id="degreeInput"
-      placeholder="Enter degree (60, 75, 90)"
+      placeholder="請輸入導線絕緣溫度 (60, 75, 90)"
     />
 
-    <label for="wiresInput">Number of Wires:</label>
-    <input type="text" id="wiresInput" placeholder="Enter number of wires" />
+    <label for="wiresInput">線寬:</label>
+    <input type="text" id="wiresInput" placeholder="請輸入線寬多少" />
 
-    <label for="amphereInput">Amphere Capacity:</label>
-    <input type="text" id="amphereInput" placeholder="Enter amphere capacity" />
+    <label for="amphereInput">安培容量:</label>
+    <input type="text" id="amphereInput" placeholder="請輸入安培容量" />
 
     <button id="calculateBtn">Calculate</button>
 
